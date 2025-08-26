@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Amazon Project</title>
+
+    <!-- Responsive design (ensures good display on mobile/tablets) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Load Google Font: Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" 
+      rel="stylesheet" 
+    />
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles/shared/general.css" />
+    <link rel="stylesheet" href="styles/shared/amazon-header.css" />
+    <link rel="stylesheet" href="styles/pages/amazon.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="amazon-header">
+      <div class="amazon-header-left-section">
+        <a href="amazon.html" class="header-link" aria-label="Amazon Home">
+          <img 
+            class="amazon-logo" 
+            src="images/amazon-logo-white.png" 
+            alt="Amazon Logo" 
+          />
+          <img 
+            class="amazon-mobile-logo" 
+            src="images/amazon-mobile-logo-white.png" 
+            alt="Amazon Mobile Logo" 
+          />
+        </a>
+      </div>
+
+      <div class="amazon-header-middle-section">
+        <input 
+          class="search-bar" 
+          type="search" 
+          placeholder="Search" 
+          aria-label="Search products" 
+        />
+        <button class="search-button" aria-label="Search">
+          <img 
+            class="search-icon" 
+            src="images/icons/search-icon.png" 
+            alt="Search Icon" 
+          />
+        </button>
+      </div>
+
+      <div class="amazon-header-right-section">
+        <a class="orders-link header-link" href="orders.html">
+          <span class="returns-text">Returns</span>
+          <span class="orders-text">&amp; Orders</span>
+        </a>
+
+        <a class="cart-link header-link" href="checkout.html">
+          <img 
+            class="cart-icon" 
+            src="images/icons/cart-icon.png" 
+            alt="Cart Icon" 
+          />
+          <div class="cart-quantity js-cart-quantity">0</div>
+          <div class="cart-text">Cart</div>
+        </a>
+      </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main">
+      <div class="products-grid js-product-grid">
+        <!-- Products will be dynamically loaded here -->
+      </div>
+    </main>
+   
+    <!-- JavaScript -->
+    <script type="module" src="scripts/amazon.js"></script>
+  </body>
+</html>
